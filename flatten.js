@@ -12,9 +12,9 @@ const eqArrays = (arrayOne, arrayTwo) => {
 
 const assertArraysEqual = (actual, expected) => {
     if (eqArrays(actual, expected)) {
-        console.log(`✅✅✅ Assertation Passed ${actual} === ${expected}`);
+        console.log(`✅✅✅ Assertion Passed ${actual} === ${expected}`);
     } else {
-        console.log(`🛑🛑🛑 Assertation Failed: ${actual} !== ${expected}`);
+        console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
 };
 
@@ -31,5 +31,5 @@ const flatten = (array) => {
 }
 
 
-
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]) 
 console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
