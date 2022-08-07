@@ -20,8 +20,6 @@ const assertArraysEqual = (actual, expected) => {
 
 const findKey = function (object, callback) {
     for (key in object) {
-        // console.log(object[key])
-        // console.log(callback(object[key]))
         if (callback(object[key]) === true) {
             break
         }
