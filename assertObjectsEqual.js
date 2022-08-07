@@ -50,7 +50,6 @@ const eqObjects = function (object1, object2) {
 
 object1 = { a: "1", b: "2" }
 object2 = { a: "1", b: "2" }
-
 assertObjectsEqual(eqObjects(object1, object2), true)
 
 

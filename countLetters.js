@@ -6,6 +6,16 @@ const assertEqual = function (actual, expected) {
     }
   };
 
+// const assertObjectsEqual = function (actual, expected) {
+//     const inspect = require('util').inspect
+
+//     if (actual === expected) {
+//         console.log(`✅✅✅ Assertion Passed ${inspect(actual)} === ${inspect(expected)}`);
+//     } else {
+//         console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+//     }
+// }
+
 ////////////////////
 
 //1. take in a sentence(string) that returns an object with counts of each letter.
@@ -26,9 +36,10 @@ const countLetters = function (sentence) {
     return results;
 }
 
+
 //const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-assertEqual(countLetters('butter'));
+//assertObjectEqual(countLetters('butter'), butterCheck);
 
 console.log(countLetters('butter'));
 console.log(countLetters('flour'));
