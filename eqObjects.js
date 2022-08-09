@@ -39,15 +39,15 @@ const eqObjects = function (object1, object2) {
         return false;
     }
 
-    // Within a loop??? what
+    // Within a loop
     // check to see if both values are arrays using Array.isArray()
     // if it is an Array pass them to "eqArrays" and ensure it returns true...
     // else : they are primitives and continue to use === to compare the two values.
     
-    for (const key in object1) {  //for in loop. looks at each key of object1  
+    for (const key in object1) {                                            //for in loop. looks at each key of object1  
         console.log("object1[key]: ", key, object1[key])
         console.log("object2[key]: ", key, object2[key])
-        if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {  //check to see if they are an array
+        if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {   //check to see if they are an array
             if (!eqArrays(object1[key], object2[key])) {
                 return false;
             }
@@ -75,3 +75,5 @@ assertEqual(eqObjects(cd, dc), true); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 assertEqual(eqObjects(cd, cd2), false); // => false
+
+module.exports = eqObjects;

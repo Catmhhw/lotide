@@ -18,7 +18,7 @@ const assertArraysEqual = (actual, expected) => {
     }
 };
 
-/////////////////
+/////////////////////////////////////////////////////////////////////////////////
 
 const flatten = (array) => {
     let newArray = []
@@ -30,6 +30,7 @@ const flatten = (array) => {
     return newArray
 }
 
-
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]) 
 console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+
+module.exports = flatten;

@@ -37,8 +37,6 @@ const countLetters = function (sentence) {
 }
 
 
-//const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
 //assertObjectEqual(countLetters('butter'), butterCheck);
 
 console.log(countLetters('butter'));
@@ -46,4 +44,6 @@ console.log(countLetters('flour'));
 console.log(countLetters('strawberry'));
 
 // how to do a value check on the keys
-// Object.keys(car).length === Object.keys(car2).length    this checks if the length of the object
+// Object.keys(car).length === Object.keys(car2).length    this checks the length of the object
+
+module.exports = countLetters;

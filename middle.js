@@ -3,9 +3,9 @@ const middle = (array) => {
         return []
     }
     if (array.length % 2 !== 0) {
-        return [Math.floor(array.length / 2) + 1]
+        return [array[Math.floor(array.length / 2)]]
     } else {
-        return [Math.floor(array.length / 2), Math.floor(array.length / 2) + 1]
+        return [array[Math.floor(array.length / 2) - 1], array[Math.floor(array.length / 2)]]
     }
 }
 
