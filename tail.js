@@ -3,7 +3,6 @@ const tail = function (array) {
 };
 
 // let arrayTest = [1,2,3,4,5];
-// console.log(arrayTest);
 // console.log(tail(arrayTest));
 
 module.exports = tail;
